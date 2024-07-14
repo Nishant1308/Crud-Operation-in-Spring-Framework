@@ -12,6 +12,7 @@
 			<div class="col-md-6 offset-md-3">
 				<h1 class="text-center mb-3">Update the Product details</h1>
 				<form action="handle-product" method="post">
+				<input type="hidden" name="id" value="${product.id}">
 					<div class="form-group">
 						<label for="name">Product Name</label><input type="text"
 							class="form-control" id="name" aria-describedby="emailHelp"
@@ -26,7 +27,7 @@
 					</div>
 
 					<div class="form-group">
-						<label for="price">Product Price</label><input type="text"
+						<label for="price">Product Price</label><input
 							class="form-control" id="price" name="price"
 							placeholder="Enter Product Price" value="${product.price }">
 					</div>

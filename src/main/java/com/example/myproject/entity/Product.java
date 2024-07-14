@@ -13,7 +13,7 @@ public class Product {
 	private Long id;
 	private String name;
 	private String description;
-	private long price;
+	private Long price;
 	
 	public Long getId() {
 		return id;
@@ -33,13 +33,13 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public long getPrice() {
+	public Long getPrice() {
 		return price;
 	}
-	public void setPrice(long price) {
+	public void setPrice(Long price) {
 		this.price = price;
 	}
-	public Product(Long id, String name, String description, long price) {
+	public Product(Long id, String name, String description, Long price) {
 		super();
 		this.id = id;
 		this.name = name;

@@ -38,7 +38,6 @@ public class MyController {
     
     @RequestMapping(value="/handle-product", method=RequestMethod.POST)
     public RedirectView handleProduct(@ModelAttribute Product product, HttpServletRequest request) {
-    	System.out.println(product);
     	productDao.createProduct(product);
     	RedirectView redirectView = new RedirectView();
     	redirectView.setUrl(request.getContextPath() + "/");

@@ -9,6 +9,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="text-center mb-3">Welcome to Product App</h1>
+				 <!-- Display success message if available -->
+                <c:if test="${not empty message}">
+                    <div class="alert alert-success">
+                        ${message}
+                    </div>
+                </c:if>
 				<table class="table">
 					<thead class="thead-dark">
 						<tr>

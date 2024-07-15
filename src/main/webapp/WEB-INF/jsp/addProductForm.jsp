@@ -11,6 +11,10 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<h1 class="text-center mb-3">Fill the Product details</h1>
+				<!-- Display success message if available -->
+				<c:if test="${not empty message}">
+					<div class="alert alert-success">${message}</div>
+				</c:if>
 				<form action="handle-product" method="post">
 					<div class="form-group">
 						<label for="name">Product Name</label><input type="text"
@@ -20,9 +24,8 @@
 
 					<div class="form-group">
 						<label for="description">Product Description</label>
-						<textarea class="form-control" id="description"
-							rows="5" name="description"
-							placeholder="Enter Product description"></textarea>
+						<textarea class="form-control" id="description" rows="5"
+							name="description" placeholder="Enter Product description"></textarea>
 					</div>
 
 					<div class="form-group">

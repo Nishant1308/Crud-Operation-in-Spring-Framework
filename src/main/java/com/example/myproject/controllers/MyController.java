@@ -36,7 +36,6 @@ public class MyController {
 			m.addAttribute("message", message);
 			sessionStatus.setComplete();
 		}
-
 		return "myPage";
 	}
 
@@ -69,7 +68,5 @@ public class MyController {
 		Product product = this.productDao.getProduct(pid);
 		m.addAttribute("product", product);
 		return "updateProduct";
-
 	}
-
 }

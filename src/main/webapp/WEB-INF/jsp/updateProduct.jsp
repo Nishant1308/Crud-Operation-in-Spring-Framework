@@ -11,10 +11,6 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<h1 class="text-center mb-3">Update the Product details</h1>
-				<!-- Display success message if available -->
-				<c:if test="${not empty message}">
-					<div class="alert alert-success">${message}</div>
-				</c:if>
 				<form action="${pageContext.request.contextPath}/handle-product"
 					method="post">
 					<input type="hidden" name="id" value="${product.id}">
